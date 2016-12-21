@@ -211,10 +211,6 @@
         this.providers = {};
         this.hostMatchs = [];
         this.getHost = getHost || this.constructor.getHost;
-
-        this.hostMatchs.push(function(source) {
-            var reg = / /i;
-        });
     }
     VideoUrlParser.getHost = function(source) {
         var hostMatchs = this.hostMatchs,

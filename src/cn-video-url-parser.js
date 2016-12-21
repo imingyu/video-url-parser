@@ -3,7 +3,7 @@
         YoukuVideoProvider: "video-provider-youku.com"
     };
     if (typeof module === "object" && typeof module.exports === "object") {
-        var core = require("video-url-parser"),
+        var core = require("./video-url-parser.js"),
             ps = [];
         core.util.each(providers, function(value, key) {
             ps.push(require(value));
