@@ -1,8 +1,0 @@
-/*!
- * <%= pkg.name %>
- * version: <%= pkg.version %>
- * author: <%= pkg.author %>
- * home: <%= pkg.homepage %>
- * description: <%= pkg.description %>
- */
- 
