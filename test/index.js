@@ -1,8 +1,9 @@
 var fs = require("fs"),
     path = require("path"),
-    dir = __dirname;
+    dir = __dirname,
+    ignore = ["index.js", "index.html"];
 
 fs.readdirSync(dir).forEach(function(filename) {
-    if (filename === "index.js") return;
+    if (ignore.indexOf(filename) !== -1) return;
     describe("test " + filename, require("./" + filename));
 });

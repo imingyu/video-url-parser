@@ -19,13 +19,14 @@
             });
 
             it("复制通用代码", function() {
-                var info = cnVideoUrlParser.parser('<iframe height=498 width=510 src="http: //player.youku.com/embed/XMTg3NjAyNzQ2MA==" frameborder=0 "allowfullscreen"></iframe>');
+                var info = cnVideoUrlParser.parser('<iframe height=498 width=510 src="http://player.youku.com/embed/XMTg3NjAyNzQ2MA==" frameborder=0 "allowfullscreen"></iframe>');
                 info = info[0];
                 assert.equal(info.id, "XMTg3NjAyNzQ2MA==");
             });
 
             it("复制flash地址", function() {
                 var info = cnVideoUrlParser.parser("http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMTg3NjAyNzQ2MA==/v.swf");
+                console.log(info);
                 info = info[0];
                 assert.equal(info.id, "XMTg3NjAyNzQ2MA==");
             });
