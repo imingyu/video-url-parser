@@ -51,7 +51,7 @@
                     regId = new RegExp(rexId, "gi"),
                     regs = [
                         new RegExp("v.youku.com/v_show/id_" + rexId + ".html", "gi"),
-                        new RegExp("player.youku.com/player.php/sid/" + rexId + "/", "gi"),
+                        new RegExp("player.youku.com/player.php/[a-zA-Z/]{*}sid/" + rexId + "/", "gi"),
                         new RegExp("player.youku.com/embed/" + rexId, "gi"),
                     ],
                     ids = {},
