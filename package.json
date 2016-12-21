@@ -7,5 +7,20 @@
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "mingyuhisoft@163.com",
-    "license": "MIT"
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/imingyu/video-url-parser/issues"
+    },
+    "homepage": "https://github.com/imingyu/video-url-parser/tree/video-provider-youku.com#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/imingyu/video-url-parser/tree/video-provider-youku.com"
+    },
+    "keywords": [
+        "video-provider-youku.com",
+        "video-provider",
+        "youku",
+        "优酷",
+        "youku.com"
+    ]
 }
