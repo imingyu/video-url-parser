@@ -41,7 +41,11 @@
                 }
             },
             hostMatch: function(source) {
-                if (/player.youku.com\/embed\//.test(source) || /v.youku.com\/v_show\/id_/gi.test(source) || /player.youku.com\/player.php\/sid\//gi.test(source)) {
+                if (/player.youku.com\/embed\//.test(source) ||
+                    /v.youku.com\/v_show\/id_/gi.test(source) ||
+                    /player.youku.com\/player.php\/sid\//gi.test(source) ||
+                    /player.youku.com\/player.php\/([a-zA-Z\/]{0,}?)sid\//gi.test(source)
+                ) {
                     return this.host;
                 }
             },
@@ -51,7 +55,7 @@
                     regId = new RegExp(rexId, "gi"),
                     regs = [
                         new RegExp("v.youku.com/v_show/id_" + rexId + ".html", "gi"),
-                        new RegExp("player.youku.com/player.php/[a-zA-Z/]{*}sid/" + rexId + "/", "gi"),
+                        new RegExp("player\.youku\.com/player\.php/([a-zA-Z/]{0,}?)sid/" + rexId + "/", "gi"),
                         new RegExp("player.youku.com/embed/" + rexId, "gi"),
                     ],
                     ids = {},
