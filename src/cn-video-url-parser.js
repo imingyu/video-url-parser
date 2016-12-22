@@ -9,7 +9,7 @@
             ps.push(require(value));
         });
         module.exports = factory(core.VideoUrlParser, core.VideoProvider, core.util, ps);
-    } else if (window) {
+    } else if (typeof window === "object") {
         var util = window.VideoUrlParserUtil,
             ps = [];
         util.each(providers, function(value, key) {
