@@ -4,7 +4,7 @@
 [![Build Status](https://travis-ci.org/imingyu/video-url-parser.svg?branch=master)](https://travis-ci.org/imingyu/video-url-parser)
 
 目前解析服务对视频网站的支持情况：
-<table>
+<table style="font-family:Microsoft Yahei;">
     <thead>
         <tr>
             <th colspan="5">中国（CN）</th>
@@ -23,9 +23,13 @@
             <td>www.youku.com</td>
             <td>已支持</td>
             <td>
-                video-provider-youku.com
-                [![npm](https://img.shields.io/npm/v/video-provider-youku.com.svg)](https://www.npmjs.com/package/video-provider-youku.com)
-                [![npm](https://img.shields.io/npm/dt/video-provider-youku.com.svg)](https://www.npmjs.com/package/video-provider-youku.com)
+                <p>video-provider-youku.com</p>
+                <a href="https://www.npmjs.com/package/video-provider-youku.com" title="NPM Version">
+                    <img src="https://img.shields.io/npm/v/video-provider-youku.com.svg" alt="NPM Version">
+                </a>
+                <a href="https://www.npmjs.com/package/video-provider-youku.com" title="NPM Downloads">
+                    <img src="https://img.shields.io/npm/dt/video-provider-youku.com.svg" alt="NPM Downloads">
+                </a>
             </td>
             <td>2016/12/22</td>
         </tr>
