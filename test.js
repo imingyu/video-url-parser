@@ -57,6 +57,28 @@ describe("video-provider-youku.com", function() {
                 id: "XMTg3NjAyNzQ2MA=="
             }), "http://player.youku.com/embed/XMTg3NjAyNzQ2MA==");
         });
+        it("number provider", function() {
+            assert.equal(parser.create({
+                provider: 2,
+                id: "XMTg3NjAyNzQ2MA=="
+            }), undefined);
+        });
+        it("boolean provider", function() {
+            assert.equal(parser.create({
+                provider: false,
+                id: "XMTg3NjAyNzQ2MA=="
+            }), undefined);
+        });
+        it("toString provider", function() {
+            assert.equal(parser.create({
+                provider: {
+                    toString: function() {
+                        return "youku.com"
+                    }
+                },
+                id: "XMTg3NjAyNzQ2MA=="
+            }), "http://player.youku.com/embed/XMTg3NjAyNzQ2MA==");
+        });
 
         it("null provider", function() {
             assert.equal(parser.create({

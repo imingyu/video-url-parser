@@ -84,16 +84,21 @@
                 }
             },
             create: function(videoInfo) {
-                if (videoInfo && videoInfo.provider) {
-                    var formater = this.formats[videoInfo.format || this.defaultFormat];
-                    if (formater) {
-                        var url = formater.call(this, videoInfo),
-                            ps = this.linkParams(this.concatParams(videoInfo.params));
-                        if (ps && url) {
-                            url += "?" + ps;
-                        }
-                        return url;
+                if (!videoInfo) return;
+                if (typeof videoInfo.provider === "object" && videoInfo.provider.host) {
+                    if (videoInfo.provider.host !== this.host) return;
+                } else if ((videoInfo.provider + "") !== this.host) {
+                    return;
+                }
+                if (!videoInfo.hasOwnProperty("id")) return;
+                var formater = this.formats[videoInfo.format || this.defaultFormat];
+                if (formater) {
+                    var url = formater.call(this, videoInfo),
+                        ps = this.linkParams(this.concatParams(videoInfo.params));
+                    if (ps && url) {
+                        url += "?" + ps;
                     }
+                    return url;
                 }
             },
             concatParams: function(params) {
