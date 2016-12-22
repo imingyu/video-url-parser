@@ -1,7 +1,7 @@
 (function(factory) {
     if (typeof module === "object" && typeof module.exports === "object") {
         module.exports = factory();
-    } else if (window) {
+    } else if (typeof window === "object") {
         factory(window);
     } else {
         throw new Error("未知宿主环境，无法运行！");
