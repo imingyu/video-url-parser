@@ -1,2 +1,23 @@
 # video-provider-youku.com
-解析优酷（www.youku.com）网站的视频url，得到视频id等源信息；同时可以根据得到的源信息创建不同格式的播放链接。
+优酷视频网址解析/创建器。
+
+[![image](https://img.shields.io/npm/v/video-provider-youku.com.svg)](https://www.npmjs.com/package/video-provider-youku.com)
+[![image](https://img.shields.io/npm/dt/video-provider-youku.com.svg)](https://www.npmjs.com/package/video-provider-youku.com)
+
+> 无法单独使用，需要与 [`video-url-parser`](https://github.com/imingyu/video-url-parser) 包一起使用。
+
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">适用于</th>
+            <th>解析规则更新时间</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>中国（CN）</td>
+            <td>优酷（www.youku.com）</td>
+            <td>2016/12/21</td>
+        </tr>
+    </tbody>
+</table>

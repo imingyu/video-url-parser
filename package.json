@@ -4,7 +4,7 @@
     "description": "解析优酷（www.youku.com）网站的视频url，得到视频id等源信息；同时可以根据得到的源信息创建不同格式的播放链接。",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "mocha test.js"
     },
     "author": "mingyuhisoft@163.com",
     "license": "MIT",
@@ -22,5 +22,9 @@
         "youku",
         "优酷",
         "youku.com"
-    ]
+    ],
+    "devDependencies": {
+        "chai": "^3.5.0",
+        "mocha": "^3.2.0"
+    }
 }
