@@ -145,7 +145,7 @@
                     }
 
                     // Recurse if we're merging plain objects or arrays
-                    if (deep && copy && (jQuery.isPlainObject(copy) ||
+                    if (deep && copy && (util.isPlainObject(copy) ||
                             (copyIsArray = util.isArray(copy)))) {
 
                         if (copyIsArray) {
@@ -285,8 +285,8 @@
         return provider.parser(source);
     };
     VideoUrlParser.prototype.passCreate = function(videoInfo) {
-        if (typeof videoInfo === "object" && typeof videoInfo.provider === "object") {
-            var provider = this.providers[videoInfo.provider.host];
+        if (typeof videoInfo === "object" && typeof videoInfo.provider !== "undefined") {
+            var provider = this.providers[videoInfo.provider.host || (videoInfo.provider + "")];
             if (provider) return provider;
         }
         return false;
