@@ -1,6 +1,7 @@
 # video-provider-youku.com
 优酷视频网址解析/创建器。
 
+![image](https://travis-ci.org/imingyu/video-url-parser.svg?branch=video-provider-youku.com)
 [![image](https://img.shields.io/npm/v/video-provider-youku.com.svg)](https://www.npmjs.com/package/video-provider-youku.com)
 [![image](https://img.shields.io/npm/dt/video-provider-youku.com.svg)](https://www.npmjs.com/package/video-provider-youku.com)
 
