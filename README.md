@@ -3,7 +3,31 @@
 
 [![Build Status](https://travis-ci.org/imingyu/video-url-parser.svg?branch=master)](https://travis-ci.org/imingyu/video-url-parser)
 
-当前状态：
-- youku.com解析器已经开发完毕，待上传。
-- 文档待编写。
-- 核心代码待测试。
+目前解析服务对视频网站的支持情况：
+<table>
+    <thead>
+        <tr>
+            <th colspan="5">中国（CN）</th>
+        </tr>
+        <tr>
+            <th>网站</th>
+            <th>网址</th>
+            <th>支持状态</th>
+            <th>解析器</th>
+            <th>更新日期</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>优酷（Youku）</td>
+            <td>www.youku.com</td>
+            <td>已支持</td>
+            <td>
+                video-provider-youku.com
+                [![npm](https://img.shields.io/npm/v/video-provider-youku.com.svg)](https://www.npmjs.com/package/video-provider-youku.com)
+                [![npm](https://img.shields.io/npm/dt/video-provider-youku.com.svg)](https://www.npmjs.com/package/video-provider-youku.com)
+            </td>
+            <td>2016/12/22</td>
+        </tr>
+    </tbody>
+</table>
