@@ -84,7 +84,7 @@
                 }
             },
             create: function(videoInfo) {
-                if (videoInfo && videoInfo.provider.host === this.host) {
+                if (videoInfo && videoInfo.provider) {
                     var formater = this.formats[videoInfo.format || this.defaultFormat];
                     if (formater) {
                         var url = formater.call(this, videoInfo),
