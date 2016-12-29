@@ -65,8 +65,7 @@ cnVideoUrlParser.parser("http://v.youku.com/v_show/id_XMTg4ODE3NDYwOA==.html");
 //[ { "id":"XMTg4ODE3NDYwOA==", "provider":{ "host":"youku.com", ...} } ]
 
 //解析一段字符串中包含的视频信息
-var str='播放 <a href="http://v.youku.com/v_show/id_XMTg4ODE3NDYwOA==.html">放弃我，抓紧我</a><br />
-播放 <a href="http://v.youku.com/v_show/id_XMTg3OTgwODE0NA==.html">飞到又见飞刀</a><br />';
+var str='播放 <a href="http://v.youku.com/v_show/id_XMTg4ODE3NDYwOA==.html">放弃我，抓紧我</a><br />播放 <a href="http://v.youku.com/v_show/id_XMTg3OTgwODE0NA==.html">飞到又见飞刀</a><br />';
 
 cnVideoUrlParser.parser(str);
 /*[
