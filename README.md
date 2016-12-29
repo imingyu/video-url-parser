@@ -2,6 +2,8 @@
 解析Youtube，Youku，Tudou，iQiyi，Souhu，QQ，Sina，LeTV等视频网站的url，得到视频的id等源信息；同时可以根据得到的源信息创建不同格式的播放链接。
 
 [![Build Status](https://travis-ci.org/imingyu/video-url-parser.svg?branch=master)](https://travis-ci.org/imingyu/video-url-parser)
+[![image](https://img.shields.io/npm/v/video-url-parser.svg)](https://www.npmjs.com/package/video-url-parser)
+[![image](https://img.shields.io/npm/dt/video-url-parser.svg)](https://www.npmjs.com/package/video-url-parser)
 
 目前解析服务对视频网站的支持情况：
 <table style="font-family:Microsoft Yahei;">
