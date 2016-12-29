@@ -79,7 +79,8 @@ cnVideoUrlParser.create({
 自定义解析器
 ---
 > 下面的示例演示了如何创建一个自定义解析器并使用它，这会让你了解`video-url-parser`包的运行机制。
-```
+
+```javascript
 var vup = require("video-url-parser"),
     VideoUrlParser = vup.VideoUrlParser,
     VideoProvider = vup.VideoProvider,
@@ -87,6 +88,7 @@ var vup = require("video-url-parser"),
 
 //创建一个解析器
 var parser = new VideoUrlParser("我的视频URL解析器");
+
 //像解析器中添加一个VideoProvider实例，负责对特定URL的解析
 parser.addProvider(new VideoProvider({
     host: "xxx.com", //唯一
@@ -113,6 +115,7 @@ console.log(videoInfo); //[ { provider: { host: 'xxx.com' }, id: '1' } ]
 
 var url = parser.create(videoInfo[0]);
 console.log(url); //http://xxx.com/play/1.html
+
 ```
 
 文件说明

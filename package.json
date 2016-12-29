@@ -1,6 +1,6 @@
 {
     "name": "video-url-parser",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "解析Youtube，Youku，Tudou，iQiyi，Souhu，QQ，Sina，LeTV等视频网站的url，得到视频的id等源信息；同时可以根据得到的源信息创建不同格式的播放链接。",
     "main": "main.js",
     "scripts": {
