@@ -294,7 +294,7 @@
     VideoUrlParser.prototype.create = function(videoInfo) {
         var provider = this.passCreate(videoInfo);
         if (provider) {
-            return provider.create(videoInfo);
+            return provider.create.call(provider, videoInfo);
         }
     };
 
