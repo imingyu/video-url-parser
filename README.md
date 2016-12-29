@@ -33,6 +33,13 @@
             </td>
             <td>2016/12/22</td>
         </tr>
+        <tr>
+            <td>土豆、56、乐视、腾讯、搜狐、i奇艺、新浪等</td>
+            <td>--</td>
+            <td>开发中</td>
+            <td>--</td>
+            <td>--</td>
+        </tr>
     </tbody>
 </table>
 
@@ -47,7 +54,8 @@ npm install video-url-parser
 ===
 使用可以解析中国区视频网站的解析器
 ---
-```
+```javascript
+
 var cnVideoUrlParser = require("video-url-parser").cnVideoUrlParser;
 
 //解析一个url
